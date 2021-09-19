@@ -1,0 +1,20 @@
+-- Table structure for table `tblusers`
+--
+CREATE TABLE IF NOT EXISTS `tblusers` (
+  `id` int(11) NOT NULL,
+  `FirstName` varchar(150) NOT NULL,
+  `LastName` varchar(150) NOT NULL,
+  `EmailId` varchar(120) NOT NULL,
+  `ContactNumber` char(11) NOT NULL,
+  `Address` varchar(255) NOT NULL,
+  `PostingDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+-- Indexes for table `tblusers`
+--
+ALTER TABLE `tblusers`
+  ADD PRIMARY KEY (`id`);
+-- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT for table `tblusers`
+--
+ALTER TABLE `tblusers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT
